@@ -4,27 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Vikings</title>
 </head>
 <body>
-    <nav>
-        <img class="logo" src="img/logo.png">
-        <li>
+    <nav class="navbar navbar-dark bg-dark ">
+        <img src="img/logo.png">
 
+        <ul class="hide row justify-content-md-center">
             <a href="#">Accueil</a>
             <a href="#">Produits</a>
             <a href="#">Contact</a>
+        </ul>
 
-        </li>
-        <a href="#"><img class="panier"></a>
-        <a href="#"><img class="avatar"></a>
+        <div class="hide">
+        <a href="#"><img class="panier" src="img/panier.png"></a>
+        <a href="#"><img class="avatar" src="img/avatar.png"></a>
+        </div>
+        <div class="reveal">
+                <div class="bar_container" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                 </div>
+        </div>
     </nav>
+    
     <article id="bar-rouge">
         <img src="img/barres_rouges.png" alt="">
         <p><span> NOUVEAU!</span> <span>SNAKE BAR ULTRA </span><SPAN>AMBIANCE ELECTRIQUE! </SPAN> </p>
 
     </article>
-    
+    <script>
+    function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
 </body>
 </html>
