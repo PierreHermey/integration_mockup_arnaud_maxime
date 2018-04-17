@@ -3,6 +3,16 @@
     padding: 0;
 }
 
+body{
+    width: 100%;
+}
+
 nav {
     background-color: #3f3f3f;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    text-align: center;
 }
