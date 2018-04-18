@@ -2,10 +2,111 @@
     margin: 0;
     padding: 0;
 }
+@font-face{
+  font-family: lithos;
+  src: url("font/LithosPro-Black.otf") format("truetype");
+  font-size: 50px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+}
+@font-face{
+    font-family: 'Segoe UI';
+    src: url("font/segoeui.ttf") format("truetype");
+    /* font-size: 50px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26.4px; */
+  }
+
 
 nav {
     background-color: #3f3f3f;
 }
+/*////////////////bar-rouge//////*/
 #bar-rouge{
 background-image: url("img/background.png");
+display: flex;
+height: 400px;
+
 }
+#img_bar_rouge{
+ display: block;
+ padding-left:100px;
+ padding-top: 20px;
+}
+#mobil_bar_rouge{
+    display:none;
+}
+
+h2 {
+font-family: lithos;
+color: #41423D;
+font-size:40px;
+padding-left:50px;
+width:600px;
+padding-top :100px;
+
+}
+#produits{
+  padding-top:50px;
+  background-color: #EAECEE;
+
+}
+.text{
+   font-family: 'Segoe UI' ;
+   /* text-align: center; */
+}
+/*/////////////////////// bar-jaune//////*/
+#bar-jaune{
+    height: 450px;
+} 
+#img_bar_jaune{
+ padding-top:20px;
+ padding-left:50px;
+ padding-bottom: 50px;
+}
+#mockup{
+    padding-top: 40px;
+    color:#41423D;
+}
+h3 {
+    font-family: lithos;
+    font-size:20px;
+     
+    }
+/* .img{
+    padding-left:200px;
+
+} */ 
+/*************************************************
+****************media query***********************/
+@media all and (max-width: 640px) {
+    #bar-rouge{
+        background-image:none;
+
+    }
+    #img_bar_rouge{
+        display: none;
+
+    }
+    #mobil_bar_rouge{
+        display:block;
+        padding-top:50px;
+        padding-left:50px;
+        padding-bottom: 50px;
+    }
+
+
+
+  }
+@media (max-width: 768px) {
+    h2{
+        display: none;
+    }
+}
+  
+/*********************************************
+////////*************************************/

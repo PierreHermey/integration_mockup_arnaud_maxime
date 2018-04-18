@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <title>Vikings</title>
 </head>
@@ -20,11 +21,66 @@
         <a href="#"><img class="panier"></a>
         <a href="#"><img class="avatar"></a>
     </nav>
-    <article id="bar-rouge">
-        <img src="img/barres_rouges.png" alt="">
-        <p><span> NOUVEAU!</span> <span>SNAKE BAR ULTRA </span><SPAN>AMBIANCE ELECTRIQUE! </SPAN> </p>
+    <section id="bar-rouge" class="row">
 
-    </article>
+        <img src="img/barres_rouges.png" alt="" id="img_bar_rouge"class="col-lg-6 col-md-6 col-sm-12">
+
+        <img src="img/firstMobile-bar.png" alt="" id="mobil_bar_rouge" class="col-sm-8">
+
+        <h2 class="col-lg-6 col-md-6 col-sm-12">NOUVEAU!<br><br> SNAKE BAR ULTRA<br><br>AMBIANCE ELECTRIQUE!</h2>
+
+    </section>
+    <section id="bar-jaune" class="row ">
+
+            <img src="img/barres_jaunes.png" alt="" id="img_bar_jaune"class="col-lg-6 col-md-6 col-sm-12">
+            <article class="col-lg-6 col-md-6 col-sm-12" id="mockup">
+                <h3> MOCKUP</h3>
+                <p> Certifié bio, sans gluten, vegan et sans lactose.<br> 
+                    Sans huile de palme. Barres gourmandes et croustillantes.<br> 
+                    A emporter partout !<br>
+                    100% d'origine naturel<br>
+                </p>
+                <p>Achetez maintenant ! </p>
+                <form>
+                    <input type="number"id ="number">
+                    <input type="submit" value="AJOUTER"> 
+                    <p>2.99€ </p>
+                </form>
+            </article>
+            
     
+    </section>
+    
+    <section id="produits" class="row">
+        <div class="col-2"></div>
+        <div class="col-10">
+            <div class="row">
+                    <article class=" col-lg-4 col-md-4 col-sm-12">
+                            <img src="img/cereals.png" alt="" class="img">
+                            <p  class="text"> 
+                                Découvrez notre gamme<br> de barre énergitique.<br> Un large choix
+                                de gout et<br> de marque selon vos<br> préférences. 
+                            </p>
+                    </article>
+                    <article class="col-lg-4 col-md-4 col-sm-12"> 
+                            <img src="img/saucette.png"alt=""  class="img">
+                            <p class="text"> 
+                                Découvrez notre gamme<br> de barre énergitique.<br> Un large choix
+                                de gout et <br>de marque selon vos<br> préférences. 
+                            </p>
+                    </article>
+                                    
+                    <article class="col-lg-4 col-md-4 col-sm-12">
+                            <img src="img/graines.png" alt="" class="img">
+                            <p class="text"> 
+                                Découvrez notre gamme<br> de barre énergitique.<br> Un large choix
+                                de gout et<br> de marque selon vos<br>préférences. 
+                            </p>
+                    </article>
+            </div>
+
+        </div>
+
+    </section>
 </body>
 </html>
