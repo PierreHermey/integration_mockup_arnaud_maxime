@@ -2,28 +2,24 @@
     margin: 0;
     padding: 0;
 }
+
+*, ::after, ::before {
+    box-sizing: content-box;
+}
+
 @font-face{
     font-family: "segoeUIb";
     src: url("fonts/seguisb.ttf") format("truetype")
 }
+
 body{
     width: 100%;
 }
+
 nav{
-    height: 50px;
+    height: 55px;
     position: fixed;
     z-index: 1000;
-}
-nav > ul > a  {
-    text-decoration: none;
-    color: white;
-    font-family: "segoeUIb";
-    text-transform: uppercase;
-    padding: 20px;
-}
-
-ol, ul {
-    margin-top: 10px;
 }
 
 .bar_container {
@@ -54,8 +50,37 @@ ol, ul {
 .reveal{
     display: none;
 }
+.navbar{
+    padding: 0;
+    padding-bottom: 2px;
+}
+.navbar-collapse{
+    text-align: center;
+    justify-content: center;
+    font-family: "segoeUIb";
+    text-transform: uppercase;
+}
 
-@media screen and (max-width: 600px){
+.dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+.dropdown-item {
+    width: auto;
+}
+
+.hide{
+    margin: 2px;
+}
+
+.btn {
+    padding: 2px;
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width: 990px){
     .hide{display: none;}
     .reveal{display: flex;}
 }
