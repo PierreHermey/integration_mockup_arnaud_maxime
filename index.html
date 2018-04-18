@@ -4,22 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<<<<<<< HEAD
     <link rel="stylesheet" href="bootstrap/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <title>Vikings</title>
+=======
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Viking</title>
+>>>>>>> f21da1de1851bc363caaab561974ae8a3a74149d
 </head>
 <body>
-    <nav>
-        <img class="logo">
-        <li>
-
-            <a href="#">Accueil</a>
-            <a href="#">Produits</a>
-            <a href="#">Contact</a>
-
-        </li>
-        <a href="#"><img class="panier"></a>
-        <a href="#"><img class="avatar"></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img class="navbar-brand" src="img/logo.png">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="bar_container" onclick="myFunction(this)"> 
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </button>
+        <div class="collapse navbar-collapse bg-dark" id="navbarSupportedContent">
+        <div class="d-flex justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Produits</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="hide">    
+            <a href="#"><img class="panier" src="img/panier.png"></a> 
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a href="" ><img src="img/avatar.png" alt="avatar"></a>
+                </button>
+                <div class="dropdown-menu">
+                    <button class="dropdown-item" type="button">INSCRIPTION</button>
+                        <div class="dropdown-divider"></div>
+                    <button class="dropdown-item" type="button">CONNEXION</button>
+                </div>
+            </div>        
+        </div>
     </nav>
     <section id="bar-rouge" class="row">
 
@@ -82,5 +114,83 @@
         </div>
 
     </section>
+<section class="smoke_white_bg">
+    <article class="container">
+        <div class="row">
+        <form class="col">
+            <label for="name"> Nom:</label>
+            <input type="text" name="name" id="name">
+            
+            <label for="firstname">Prenom:</label>
+            <input type="text" name="firstname" id="firstname">
+            
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="mail">
+            
+            <label for="msg">Message:</label>
+            <textarea name="msg" id="msg"></textarea>
+                
+            <input class="form_send" type="button" value="envoyer">   
+        </form>
+        <div class="col" style="width: 300px">
+            <iframe width="300" height="500" src="https://maps.google.com/maps?width=300&amp;height=500&amp;hl=en&amp;q=3%20rue%20pasteur%2C%20Lons-le-saunier+(Vikings)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                <a href="https://www.maps.ie/create-google-map/">Create Google Map</a>
+            </iframe>
+        </div><br />
+    </div>
+</article>
+</section>
+<section class="grey">
+    <div class="container">
+        <div class="row">
+            <article class="col">
+                <p class="underline">Viking</p>
+                <p><a href="#">Qui sommes-nous ?</a></p>
+                <p><a href="#">Nos engagements</a></p>
+                <p><a href="#">Recrutement</a></p>
+                <p><a href="#">Nos 860 magasins</a></p>
+            </article>
+            <article class="col">
+                <p class="underline">Infos Légales</p>
+                <p><a href="#">Mentions légales</a></p>
+                <p><a href="#">Charte de confidentialité</a></p>
+                <p><a href="#">Données personnelles</a></p>
+                <p><a href="#">Cookie</a></p>
+            </article>
+            <article class="col">
+                <p class="underline">Conditions générales de vente </p>
+                <p><a href="#">Garanties de paiement</a></p>
+                <p><a href="#">Plan du site</a></p>
+            </article>
+            <article class="col">
+                <p class="underline">Contact</p>
+                <p>03.84.84.84.84</p>
+                <p>Du Lundi au Samedi</p>
+                <p>8h00-18h00</p>
+                <p><a href="#">Aide</a></p>
+            </article>
+        </div>
+    </div>
+</section>
+<section class="black">
+    <div class="container">
+        <div class="row justify-content-center">
+            <a href="#"><img src="img/fb.png" alt="facebook logo"></a>
+            <a href="#"><img src="img/twitter.png" alt="twitter logo"></a>
+            <a href="#"><img src="img/google.png" alt="googleplus logo"></a>
+            <a href="#"><img src="img/iinsta.png" alt="insta logo"></a> 
+        </div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script>
+    function myFunction(x) {
+            x.classList.toggle("change");
+        }
+</script>
+
 </body>
 </html>
