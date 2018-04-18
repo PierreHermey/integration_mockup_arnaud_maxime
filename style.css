@@ -3,18 +3,22 @@
     padding: 0;
 }
 
-*, ::after, ::before {
-    box-sizing: content-box;
-}
 
 @font-face{
     font-family: "segoeUIb";
     src: url("fonts/seguisb.ttf") format("truetype")
 }
+@font-face{
+    font-family: "lithos";
+    src: url("fonts/lithos.otf") format("truetype")
+}
+
 
 body{
     width: 100%;
 }
+
+/*navbar*/
 
 nav{
     height: 55px;
@@ -77,10 +81,119 @@ nav{
 .btn {
     padding: 2px;
     margin-right: 10px;
+    border: none;
 }
+
+.btn-secondary{
+    background-color: #343A40;
+}
+
+
+/* frame + form */
+
+.grey{
+    background-color: #eeeeee;
+    padding: 30px;
+}
+
+.container {
+    width: auto;
+    justify-content: center;
+    border-left: solid grey 1px;
+    border-right: solid grey 1px;
+}
+
+form{ 
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: "segoeUIb";
+    font-size: 12px;
+    text-transform: uppercase;
+    color: grey;
+}
+
+label{
+    text-align: center;
+    margin-top: 5px;
+}
+
+[type="text"]{
+    background: none;
+    border: none;
+    border-bottom: grey 2px solid;
+}
+
+textarea{
+    margin-bottom: 10px;
+    border: grey 2px solid;
+    background: none;
+    height: 100px;
+}
+
+.form_send{
+    margin: auto;
+    background-color: #85d946;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    color: white;
+    text-shadow: black 2px 1px 1px;
+    box-shadow: black 2px 2px 4px;
+    font-family: "lithos";
+    text-transform: uppercase;
+    padding: 2px;
+    cursor: pointer;
+}
+
+
+
+iframe {
+    margin-left: 5%;
+}
+
+
 
 
 @media screen and (max-width: 990px){
     .hide{display: none;}
     .reveal{display: flex;}
+
+    .container {
+        border: none;
+    }
+
+    form{
+        margin: auto;
+    }
+
 }
+
+@media screen and (max-width: 600px){
+    form{
+        
+        margin-top: auto;
+        margin: auto;
+       
+   }
+
+    .form_send{
+        margin-bottom: 20px;
+    }
+    iframe{
+        margin: auto;
+   }
+}
+
+@media screen and (max-width: 350px){
+    form{
+        margin-top: auto;
+        margin: auto;
+    }
+    iframe{
+        margin-left: -30px;
+    }
+ }
+ 
