@@ -13,7 +13,6 @@
     src: url("fonts/lithos.otf") format("truetype")
 }
 
-
 body{
     width: 100%;
 }
@@ -148,8 +147,6 @@ textarea{
     cursor: pointer;
 }
 
-
-
 iframe {
     margin-left: 5%;
 }
@@ -180,7 +177,6 @@ iframe {
     color: #d7c333;
 }
 
-
 .underline {
     text-decoration: underline;
 }
@@ -194,8 +190,6 @@ iframe {
 .black .row{
     padding: 10px;
 }
-
-
 
 @media screen and (max-width: 990px){
     .hide{display: none;}
