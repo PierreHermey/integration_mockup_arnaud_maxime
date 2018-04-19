@@ -2,26 +2,11 @@
     margin: 0;
     padding: 0;
 }
-@font-face{
-  font-family: lithos;
-  src: url("font/LithosPro-Black.otf") format("truetype");
-  font-size: 50px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 500;
-  line-height: 26.4px;
-}
+
 @font-face{
     font-family: 'Segoe UI';
-    src: url("font/segoeui.ttf") format("truetype");
-    /* font-size: 50px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 500;
-    line-height: 26.4px; */
+    src: url("fonts/segoeui.ttf") format("truetype");
   }
-
-
 
 @font-face{
     font-family: "segoeUIb";
@@ -40,8 +25,11 @@ body{
 
 nav{
     height: 55px;
-    position: fixed;
-    z-index: 1000;
+}
+
+.nav-link{
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .bar_container {
@@ -75,6 +63,11 @@ nav{
 .navbar{
     padding: 0;
     padding-bottom: 2px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0; 
+    width: 100%;
 }
 .navbar-collapse{
     text-align: center;
@@ -90,10 +83,6 @@ nav{
 
 .dropdown-item {
     width: auto;
-}
-
-.hide{
-    margin: 2px;
 }
 
 .btn {
@@ -121,7 +110,7 @@ nav{
     border-right: solid grey 1px;
 }
 
-form{ 
+.smoke_white_bg form{ 
     display: flex;
     flex-direction: column;
     margin-top: 100px;
@@ -134,90 +123,68 @@ form{
 }
 /*////////////////bar-rouge//////*/
 #bar-rouge{
-background-image: url("img/background.png");
-display: flex;
-height: 400px;
+background: url("img/background.png") no-repeat;
+background-size: cover;
+margin-top: 50px;
+padding: 10px;
 
-}
-#img_bar_rouge{
- display: block;
- padding-left:100px;
- padding-top: 20px;
-}
-#mobil_bar_rouge{
-    display:none;
 }
 
 h2 {
 font-family: lithos;
 color: #41423D;
 font-size:40px;
-padding-left:50px;
 width:600px;
 padding-top :100px;
-
 }
-#produits{
-  padding-top:50px;
-  background-color: #EAECEE;
 
-}
 .text{
    font-family: 'Segoe UI' ;
-   /* text-align: center; */
+   text-align: center; 
 }
+
+/* .grey_deux img {
+    margin-left: 20%;
+} */
 /*/////////////////////// bar-jaune//////*/
 #bar-jaune{
-    height: 450px;
+    background-color: #eeeeee;
 } 
-#img_bar_jaune{
- padding-top:20px;
- padding-left:50px;
- padding-bottom: 50px;
-}
+
 #mockup{
     padding-top: 40px;
     color:#41423D;
+    margin-top: 20px;
+}
+.text_vente{
+font-family: "Segoe UI";
+color: #838383;
+font-size: 18px;
+}
+
+[type="number"]{
+    width: 80px;
+    border-radius: 5px;
+    border: #e2e2e2 1px solid;
+    margin-bottom: 15px;
+}
+
+.buy_btn{
+    margin: auto;
+    background-color: #85d946;
+    border: none;
+    width: 100px;
+    color: white;
+    text-transform: uppercase;
+    padding: 2px;
+    cursor: pointer;
 }
 h3 {
     font-family: lithos;
     font-size:20px;
      
     }
-/* .img{
-    padding-left:200px;
-
-} */ 
-/*************************************************
-****************media query***********************/
-@media all and (max-width: 640px) {
-    #bar-rouge{
-        background-image:none;
-
-    }
-    #img_bar_rouge{
-        display: none;
-
-    }
-    #mobil_bar_rouge{
-        display:block;
-        padding-top:50px;
-        padding-left:50px;
-        padding-bottom: 50px;
-    }
-
-
-
-  }
-@media (max-width: 768px) {
-    h2{
-        display: none;
-    }
-}
   
-/*********************************************
-////////*************************************/
-
 label{
     text-align: center;
     margin-top: 5px;
@@ -261,6 +228,14 @@ iframe {
     background-color: #e2e2e2;
     color: #3f3f3f;
 }
+.grey_deux{
+    background-color: #e2e2e2;
+}
+
+.grey_deux .container {
+    width: auto;
+    justify-content: center;
+}
 
 .grey .row {
     padding-top: 30px;
@@ -295,15 +270,25 @@ iframe {
     padding: 10px;
 }
 
+/* iframe map */
+
+.iframe_carr{
+    display: none;
+}
+
+/*************************************************
+****************media query***********************/
+
 @media screen and (max-width: 990px){
     .hide{display: none;}
+    #bar-rouge{display: none;}
     .reveal{display: flex;}
 
     .smoke_white_bg .container {
         border: none;
     }
 
-    form{
+    .smoke_white_bg form{
         margin: auto;
     }
 
@@ -313,7 +298,9 @@ iframe {
 
 }
 
+
 @media screen and (max-width: 600px){
+    
     form{
         
         margin-top: auto;
@@ -331,6 +318,8 @@ iframe {
    .col{
        flex-basis:auto;
    }
+   .iframe_carr{display: flex;}
+   .iframe_rect{display: none;}
 }
 
 @media screen and (max-width: 350px){
@@ -343,3 +332,5 @@ iframe {
     }
  }
  
+/*********************************************
+////////*************************************/

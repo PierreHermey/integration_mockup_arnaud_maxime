@@ -48,66 +48,89 @@
             </div>        
         </div>
     </nav>
-    <section id="bar-rouge" class="row">
-
-        <img src="img/barres_rouges.png" alt="" id="img_bar_rouge"class="col-lg-6 col-md-6 col-sm-12">
-
-        <img src="img/firstMobile-bar.png" alt="" id="mobil_bar_rouge" class="col-sm-8">
-
-        <h2 class="col-lg-6 col-md-6 col-sm-12">NOUVEAU!<br><br> SNAKE BAR ULTRA<br><br>AMBIANCE ELECTRIQUE!</h2>
-
+    <section id="bar-rouge">
+        <div class="container hide">
+            <div class="row">
+        
+        <img src="img/barres_rouges.png" alt="" id="img_bar_rouge"class="col">
+        <h2 class="col">NOUVEAU!<br><br> SNAKE BAR ULTRA<br><br>AMBIANCE ELECTRIQUE!</h2>
+            </div>
+        </div>
     </section>
-    <section id="bar-jaune" class="row ">
-
-            <img src="img/barres_jaunes.png" alt="" id="img_bar_jaune"class="col-lg-6 col-md-6 col-sm-12">
-            <article class="col-lg-6 col-md-6 col-sm-12" id="mockup">
+    <section id="bar-jaune">
+    <div class="container hide">
+        <div class="row">
+            <img src="img/barres_jaunes.png" alt="" id="img_bar_jaune"class="col">
+            <article class="col" id="mockup">
                 <h3> MOCKUP</h3>
-                <p> Certifié bio, sans gluten, vegan et sans lactose.<br> 
+                <br>
+                <p class="text_vente"> Certifié bio, sans gluten, vegan et sans lactose.<br> 
                     Sans huile de palme. Barres gourmandes et croustillantes.<br> 
                     A emporter partout !<br>
                     100% d'origine naturel<br>
                 </p>
-                <p>Achetez maintenant ! </p>
+                <br>
+                <p class="text_vente">Achetez maintenant ! </p>
                 <form>
-                    <input type="number"id ="number">
-                    <input type="submit" value="AJOUTER"> 
-                    <p>2.99€ </p>
+                    <input type="number" id="number">
+                    <input class="buy_btn" type="button" value="AJOUTER">
+                    <p class="text_vente">2.99€ </p>
                 </form>
             </article>
-            
-    
+        </div>
+    </div>
+    </section>
+
+    <section> 
+        <div class="container reveal">
+        <article class="row">
+        <img src="img/barre_mobile.png" class="col-md-12">
+        <div class="col-md-12 justify-content-md-center" id="mockup">
+            <h3> MOCKUP</h3>
+            <br>
+            <p class="text_vente"> Certifié bio, sans gluten, vegan et sans lactose.<br> 
+                Sans huile de palme. Barres gourmandes et croustillantes.<br> 
+                A emporter partout !<br>
+                100% d'origine naturel<br>
+            </p>
+            <br>
+            <p class="text_vente">Achetez maintenant ! </p>
+            <form>
+                <input type="number" id="number">
+                <input class="buy_btn" type="button" value="AJOUTER">
+                <p class="text_vente">2.99€ </p>
+            </form>
+        </div>
+        </article>
+        </div>
     </section>
     
-    <section id="produits" class="row">
-        <div class="col-2"></div>
-        <div class="col-10">
-            <div class="row">
-                    <article class=" col-lg-4 col-md-4 col-sm-12">
-                            <img src="img/cereals.png" alt="" class="img">
+    <section class="grey_deux">
+        <div class="container">
+            <div class="row ">
+                    <article class="col container justify-content-md-center">
+                            <a href="#"><img src="img/cereals.png" alt=""></a>
                             <p  class="text"> 
                                 Découvrez notre gamme<br> de barre énergitique.<br> Un large choix
                                 de gout et<br> de marque selon vos<br> préférences. 
                             </p>
                     </article>
-                    <article class="col-lg-4 col-md-4 col-sm-12"> 
-                            <img src="img/saucette.png"alt=""  class="img">
+                    <article class="col"> 
+                            <a href="#"><img src="img/saucette.png"alt="" ></a>
                             <p class="text"> 
                                 Découvrez notre gamme<br> de barre énergitique.<br> Un large choix
                                 de gout et <br>de marque selon vos<br> préférences. 
                             </p>
-                    </article>
-                                    
-                    <article class="col-lg-4 col-md-4 col-sm-12">
-                            <img src="img/graines.png" alt="" class="img">
+                    </article>            
+                    <article class="col">
+                            <a href="#"><img src="img/graines.png" alt=""></a>
                             <p class="text"> 
                                 Découvrez notre gamme<br> de barre énergitique.<br> Un large choix
                                 de gout et<br> de marque selon vos<br>préférences. 
                             </p>
                     </article>
             </div>
-
         </div>
-
     </section>
 <section class="smoke_white_bg">
     <article class="container">
@@ -127,11 +150,17 @@
                 
             <input class="form_send" type="button" value="envoyer">   
         </form>
-        <div class="col" style="width: 300px">
+        <div class="col iframe_rect" style="width: 300px">
             <iframe width="300" height="500" src="https://maps.google.com/maps?width=300&amp;height=500&amp;hl=en&amp;q=3%20rue%20pasteur%2C%20Lons-le-saunier+(Vikings)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                 <a href="https://www.maps.ie/create-google-map/">Create Google Map</a>
             </iframe>
-        </div><br />
+        </div>
+
+        <div class="col iframe_carr" style="width: 300px">
+            <iframe width="300" height="300" src="https://maps.google.com/maps?width=300&amp;height=300&amp;hl=en&amp;q=3%20rue%20pasteur+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                <a href="https://www.maps.ie/create-google-map/">Google map generator</a>
+            </iframe>
+        </div>
     </div>
 </article>
 </section>
