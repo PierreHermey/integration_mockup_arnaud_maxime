@@ -60,6 +60,7 @@ nav{
 .reveal{
     display: none;
 }
+
 .navbar{
     padding: 0;
     padding-bottom: 2px;
@@ -95,6 +96,13 @@ nav{
     background-color: #343A40;
 }
 
+.barre_mobile{
+    width: 300px;
+    margin-top: 60px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* frame + form */
 
@@ -143,9 +151,16 @@ padding-top :100px;
    text-align: center; 
 }
 
-/* .grey_deux img {
-    margin-left: 20%;
-} */
+.container_buy{
+    width: 27%;
+    margin: auto;
+}
+.container_img_text{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*/////////////////////// bar-jaune//////*/
 #bar-jaune{
     background-color: #eeeeee;
@@ -156,10 +171,18 @@ padding-top :100px;
     color:#41423D;
     margin-top: 20px;
 }
+
 .text_vente{
 font-family: "Segoe UI";
 color: #838383;
 font-size: 18px;
+}
+
+.text_vente_mobile{
+    font-family: "Segoe UI";
+    color: #838383;
+    font-size: 18px;
+    text-align: center;
 }
 
 [type="number"]{
@@ -179,6 +202,7 @@ font-size: 18px;
     padding: 2px;
     cursor: pointer;
 }
+
 h3 {
     font-family: lithos;
     font-size:20px;
@@ -228,6 +252,7 @@ iframe {
     background-color: #e2e2e2;
     color: #3f3f3f;
 }
+
 .grey_deux{
     background-color: #e2e2e2;
 }
@@ -298,10 +323,15 @@ iframe {
 
 }
 
+@media screen and (max-width: 760px){
+    .container_buy{
+        width: 40%;
+    }
+}
 
 @media screen and (max-width: 600px){
     
-    form{
+    .smoke_white_bg form{
         
         margin-top: auto;
         margin: auto;
@@ -322,6 +352,12 @@ iframe {
    .iframe_rect{display: none;}
 }
 
+@media screen and (max-width: 505px){
+    .container_buy{
+        width: 60%;
+    }
+}
+
 @media screen and (max-width: 350px){
     form{
         margin-top: auto;
@@ -331,6 +367,3 @@ iframe {
         margin-left: -30px;
     }
  }
- 
-/*********************************************
-////////*************************************/
