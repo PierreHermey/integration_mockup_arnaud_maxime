@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Viking</title>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a href="index.html"><img class="navbar-brand" src="img/logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,29 +23,31 @@
             <div class="d-flex justify-content-center">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                        <a class="nav-link active js-scrollTo" href="#">Accueil <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Produits</a>
+                        <a class="nav-link js-scrollTo" href="#produits">Produits</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link js-scrollTo" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="hide">    
-            <a href="#"><img class="panier" src="img/panier.png"></a> 
+        <div class="hide">  
+            <div class="img_menu_size">
+            <a href="#"><img class="panier" src="img/panier.svg"></a> 
             <div class="btn-group">
                 <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <a href="" ><img src="img/avatar.png" alt="avatar"></a>
+                    <a href="" ><img src="img/avatar.svg" alt="avatar"></a>
                 </button>
                 <div class="dropdown-menu">
                     <button class="dropdown-item" type="button">INSCRIPTION</button>
                         <div class="dropdown-divider"></div>
                     <button class="dropdown-item" type="button">CONNEXION</button>
                 </div>
-            </div>        
+            </div> 
+        </div>       
         </div>
     </nav>
     <section id="bar-rouge">
@@ -70,7 +72,7 @@
                     
                     <p class="text_vente">Achetez maintenant ! </p>
                     <form>
-                        <input type="number" id="number">
+                        <input type="number" id="number" placeholder="1">
                         <input class="buy_btn" type="button" value="AJOUTER">
                         <p class="text_vente">2.99€ </p>
                     </form>
@@ -100,6 +102,7 @@
             </article>
         </div>
     </section>
+    <div id="produits"></div>
     <section class="grey_deux hide">
         <div class="container">
             <div class="row ">
@@ -137,14 +140,28 @@
                         </ol> -->
                         <div class="carousel-inner">
                           <div class="carousel-item active">
+                            
                             <a href="#"><img class="d-block w-100" src="img/cereals.png" alt="First slide"></a>
-                          </div>
+                            <p  class="text"> 
+                                Découvrez notre gamme de barre énergitique. Un large choix
+                                de gout et de marque selon vos préférences. 
+                            </p>
+                        </div>
+
                           <div class="carousel-item">
                                 <a href="#"><img class="d-block w-100" src="img/saucette.png" alt="Second slide"></a>
-                          </div>
+                                <p  class="text"> 
+                                    Découvrez notre gamme de barre énergitique. Un large choix
+                                    de gout et de marque selon vos préférences. 
+                                </p>
+                            </div>
                           <div class="carousel-item">
                                 <a href="#"><img class="d-block w-100" src="img/graines.png" alt="Third slide"></a>
-                          </div>
+                                <p  class="text"> 
+                                    Découvrez notre gamme de barre énergitique. Un large choix
+                                    de gout et de marque selon vos préférences. 
+                                </p>
+                            </div>
                         </div>
                         
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -155,14 +172,10 @@
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="sr-only">Next</span>
                         </a>
-                      </div>
-                      <p  class="text"> 
-                            Découvrez notre gamme de barre énergitique. Un large choix
-                            de gout et de marque selon vos préférences. 
-                    </p>
+                    </div>
             </div>
         </section>
-    
+        <div id="contact"></div>
     <section class="smoke_white_bg">
         <article class="container">
             <div class="row">
@@ -207,7 +220,7 @@
             </div>
         </article>
     </section>
-    <div id="contact"></div>
+    
     <section class="grey">
         <div class="container">
             <div class="row">
@@ -257,6 +270,17 @@
     function myFunction(x) {
             x.classList.toggle("change");
         }
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
 </script>
 </body>
 </html>
