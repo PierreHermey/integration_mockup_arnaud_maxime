@@ -326,8 +326,8 @@ iframe {
 .grey_deux{
     padding: 20px;
 }
-
-
+.iframe_carr_un{display: none;}
+.iframe_carr_deux{display: none;}
 
 /*************************************************
 ****************media query***********************/
@@ -378,7 +378,7 @@ iframe {
    .col{
        flex-basis:auto;
    }
-   .iframe_carr{display: flex;}
+   .iframe_carr_un{display: flex;}
    .iframe_rect{display: none;}
 }
 
@@ -386,17 +386,23 @@ iframe {
     .container_buy{
         width: 60%;
     }
+    
 }
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 360px){
     form{
         margin-top: auto;
         margin: auto;
     }
-    iframe{
-        margin-left: -30px;
-    }
+    .iframe_carr_un{display: none;}
+    .iframe_carr_deux{display: flex;}
+    
     .container_buy{
         width: 65%;
     }
+ }
+
+ @media screen and (max-width: 270px) {
+     .iframe_carr_deux{display: none;}
+     .iframe_carr_trois{display: flex;}
  }
